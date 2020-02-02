@@ -11,7 +11,9 @@ $rows = $select_sth->fetchAll();
 <?php foreach ($rows as $row) : ?>
 <div>
     <span><?php if ($row['name']) { echo $row['name']; } else { echo "名無し"; } ?>さんの投稿 (投稿日: <?php echo $row['created_at']; ?>)</span>
-    <p>
+ 
+ 	    	 <?php if ($row['name']) {echo $row['name']; } else { echo "名無し";}?> | <a href="profile.php?user=<?php echo $row['name'] ?>">View Profile</a> 
+   <p>
         <?php echo $row['body']; ?>
     </p>
     <?php if (!empty($row['filename'])) { ?>

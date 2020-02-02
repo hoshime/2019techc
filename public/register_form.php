@@ -15,5 +15,7 @@ if ($_GET['error'] === "2") {
     <div>
         パスワード: <input type="password" name="password" minlength="6" maxlength="100">
     </div> 
-    <input type="submit" value="登録">
+ <!-- <div class="avatar"><label>Select your avatar: </label><input type="file" name="avatar" accept="image/*" required /></div>
+-->  
+  <input type="submit" value="登録">
 </form>
